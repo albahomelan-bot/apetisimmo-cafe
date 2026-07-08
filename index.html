@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apetisimmo | Домашня українська кухня в Дурресі, Албанія</title>
+    <meta name="description" content="Кафе Apetisimmo в Дурресі. Справжня домашня українська кухня: борщ, вареники, голубці, медовик. Затишна сімейна атмосфера на Rruga Pavarësia.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="lang-uk"> <!-- Defaults to Ukrainian language -->
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">APETISIMMO</a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li>
+                        <a href="#hero" class="nav-link active">
+                            <span class="lang-text-uk">Головна</span>
+                            <span class="lang-text-en">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link">
+                            <span class="lang-text-uk">Про нас</span>
+                            <span class="lang-text-en">About Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#menu" class="nav-link">
+                            <span class="lang-text-uk">Меню</span>
+                            <span class="lang-text-en">Menu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#gallery" class="nav-link">
+                            <span class="lang-text-uk">Галерея</span>
+                            <span class="lang-text-en">Gallery</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#reviews" class="nav-link">
+                            <span class="lang-text-uk">Відгуки</span>
+                            <span class="lang-text-en">Reviews</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="nav-link">
+                            <span class="lang-text-uk">Контакти</span>
+                            <span class="lang-text-en">Contacts</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <!-- Language Switcher Button -->
+                <button class="lang-switcher" id="lang-switcher-btn" aria-label="Змінити мову / Switch Language">
+                    <span class="flag-icon"><i class="fa-solid fa-globe"></i></span>
+                    <span class="lang-label-uk">EN</span>
+                    <span class="lang-label-en">UA</span>
+                </button>
+                <a href="#booking" class="btn btn-primary nav-cta-btn">
+                    <span class="lang-text-uk">Замовити</span>
+                    <span class="lang-text-en">Book / Order</span>
+                </a>
+            </div>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Відкрити меню">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-overlay" style="background-image: linear-gradient(rgba(30, 43, 39, 0.65), rgba(30, 43, 39, 0.85)), url('assets/entrance.jpg');"></div>
+            <div class="container hero-container">
+                <div class="hero-content scroll-reveal">
+                    <span class="hero-subtitle">
+                        <span class="lang-text-uk">Сімейне кафе в Дурресі</span>
+                        <span class="lang-text-en">Family Cafe in Durrës</span>
+                    </span>
+                    <h1 class="hero-title">
+                        <span class="lang-text-uk">Справжній смак <span class="serif-italic">дому</span></span>
+                        <span class="lang-text-en">Real taste of <span class="serif-italic">home</span></span>
+                    </h1>
+                    <p class="hero-description">
+                        <span class="lang-text-uk">Справжня домашня українська кухня в Албанії. Борщ із запашною зеленню, ніжні голубці та вареники, приготовані з любов'ю та душею.</span>
+                        <span class="lang-text-en">Authentic homemade Ukrainian cuisine in Albania. Hearty borscht, savory stuffed cabbage, and delicious varenyki prepared with love and soul.</span>
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#menu" class="btn btn-primary">
+                            <span class="lang-text-uk">Дивитись меню</span>
+                            <span class="lang-text-en">View Menu</span>
+                        </a>
+                        <a href="#contacts" class="btn btn-outline btn-white">
+                            <span class="lang-text-uk">Де ми знаходимось</span>
+                            <span class="lang-text-en">Find Us</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section">
+            <div class="container about-container">
+                <div class="about-visual scroll-reveal">
+                    <div class="image-grid">
+                        <div class="grid-img-wrapper item-large">
+                            <img src="assets/entrance.jpg" alt="Кафе Apetisimmo" class="about-img">
+                        </div>
+                        <div class="grid-img-wrapper item-small">
+                            <img src="assets/holubtsi_close.jpg" alt="Домашні голубці" class="about-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content scroll-reveal delay-200">
+                    <span class="section-subtitle-badge">
+                        <span class="lang-text-uk">ПРО НАС</span>
+                        <span class="lang-text-en">ABOUT US</span>
+                    </span>
+                    <h2 class="section-title">
+                        <span class="lang-text-uk">Затишне місце з душею</span>
+                        <span class="lang-text-en">A very cozy place with a soul</span>
+                    </h2>
+                    <p class="about-desc">
+                        <span class="lang-text-uk">Ласкаво просимо до нашого маленького куточка України на узбережжі Адріатичного моря! Тут вас зустрінуть як рідних, адже Apetisimmo — це сімейна справа.</span>
+                        <span class="lang-text-en">Welcome to our little corner of Ukraine on the Adriatic coast! Here you are greeted like family, because Apetisimmo is a family-run business.</span>
+                    </p>
+                    <p class="about-desc">
+                        <span class="lang-text-uk">Над затишком і кожною стравою працює чудова господиня разом зі своїми дітьми — донькою та сином. Ми об'єднали зусилля всієї родини, щоб кожен наш гість відчув себе як вдома, насолоджуючись справжнім домашнім смаком.</span>
+                        <span class="lang-text-en">The wonderful hostess and her entire family – daughter and son – work together and do everything to make guests comfortable. We combine our family love to create a warm atmosphere and real home taste.</span>
+                    </p>
+                    <div class="features-list">
+                        <div class="feature-bullet">
+                            <span class="bullet-icon"><i class="fa-solid fa-heart"></i></span>
+                            <span class="bullet-text">
+                                <span class="lang-text-uk">Приготовлено з любов'ю</span>
+                                <span class="lang-text-en">Prepared with love & soul</span>
+                            </span>
+                        </div>
+                        <div class="feature-bullet">
+                            <span class="bullet-icon"><i class="fa-solid fa-users"></i></span>
+                            <span class="bullet-text">
+                                <span class="lang-text-uk">Сімейний теплий прийом</span>
+                                <span class="lang-text-en">Warm, family attitude</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle-badge">
+                        <span class="lang-text-uk">КУХНЯ</span>
+                        <span class="lang-text-en">OUR DISHES</span>
+                    </span>
+                    <h2 class="section-title">
+                        <span class="lang-text-uk">Наше домашнє меню</span>
+                        <span class="lang-text-en">Our Homemade Menu</span>
+                    </h2>
+                    <p class="section-desc">
+                        <span class="lang-text-uk">Класичні страви української кухні, приготовлені за перевіреними часом домашніми рецептами.</span>
+                        <span class="lang-text-en">Classic dishes of Ukrainian cuisine prepared according to time-tested family recipes.</span>
+                    </p>
+                </div>
+
+                <div class="menu-grid">
+                    <!-- Item 1: Borscht -->
+                    <div class="menu-card scroll-reveal">
+                        <div class="menu-card-image">
+                            <img src="assets/borscht.jpg" alt="Борщ український">
+                            <span class="menu-price-tag">450 ALL</span>
+                        </div>
+                        <div class="menu-card-info">
+                            <h3 class="menu-item-title">
+                                <span class="lang-text-uk">Український борщ</span>
+                                <span class="lang-text-en">Ukrainian Borscht</span>
+                            </h3>
+                            <p class="menu-item-desc">
+                                <span class="lang-text-uk">Справжній насичений борщ із ніжним м'ясом, буряком та капустою. Подається зі свіжою сметаною та шматочками хліба.</span>
+                                <span class="lang-text-en">Rich, traditional beet soup cooked with meat and cabbage. Served hot with sour cream and fresh bread.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Holubtsi -->
+                    <div class="menu-card scroll-reveal delay-100">
+                        <div class="menu-card-image">
+                            <img src="assets/holubtsi_combo.jpg" alt="Голубці домашні">
+                            <span class="menu-price-tag">600 ALL</span>
+                        </div>
+                        <div class="menu-card-info">
+                            <h3 class="menu-item-title">
+                                <span class="lang-text-uk">Домашні голубці</span>
+                                <span class="lang-text-en">Homemade Holubtsi</span>
+                            </h3>
+                            <p class="menu-item-desc">
+                                <span class="lang-text-uk">Соковитий м'ясний фарш із рисом, загорнутий в ніжне капустяне листя та протушкований у густому томатно-овочевому соусі.</span>
+                                <span class="lang-text-en">Cabbage leaves stuffed with seasoned minced meat and rice, slow-cooked in rich tomato and vegetable gravy.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Varenyki -->
+                    <div class="menu-card scroll-reveal delay-200">
+                        <div class="menu-card-image">
+                            <img src="assets/holubtsi_close.jpg" alt="Вареники з картоплею" class="grayscale-accent">
+                            <span class="menu-price-tag">500 ALL</span>
+                        </div>
+                        <div class="menu-card-info">
+                            <h3 class="menu-item-title">
+                                <span class="lang-text-uk">Вареники з картоплею</span>
+                                <span class="lang-text-en">Varenyki with Potatoes</span>
+                            </h3>
+                            <p class="menu-item-desc">
+                                <span class="lang-text-uk">Свіжозліплені вареники з ніжною картопляною начинкою, щедро политі золотистою обсмаженою цибулею. Подаються зі сметаною.</span>
+                                <span class="lang-text-en">Handmade soft dumplings stuffed with mashed potato, topped with golden fried onions. Served with sour cream.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Medovik -->
+                    <div class="menu-card scroll-reveal delay-300">
+                        <div class="menu-card-image">
+                            <div class="graphic-placeholder-dish">
+                                <i class="fa-solid fa-cake-slice"></i>
+                            </div>
+                            <span class="menu-price-tag">350 ALL</span>
+                        </div>
+                        <div class="menu-card-info">
+                            <h3 class="menu-item-title">
+                                <span class="lang-text-uk">Класичний Медовик</span>
+                                <span class="lang-text-en">Classic Honey Cake</span>
+                            </h3>
+                            <p class="menu-item-desc">
+                                <span class="lang-text-uk">Багатошаровий ароматний медовий торт, просочений ніжним і легким сметанним кремом. Солодкий смак вашого дитинства.</span>
+                                <span class="lang-text-en">Delicate layered honey cake soaked in fluffy sour cream frosting. Sweet and soft ending to your meal.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Atmosphere Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle-badge">
+                        <span class="lang-text-uk">ГАЛЕРЕЯ</span>
+                        <span class="lang-text-en">ATMOSPHERE</span>
+                    </span>
+                    <h2 class="section-title">
+                        <span class="lang-text-uk">Атмосфера нашого кафе</span>
+                        <span class="lang-text-en">Cozy Moments of Apetisimmo</span>
+                    </h2>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item scroll-reveal">
+                        <img src="assets/user_photo_1.jpg" alt="Apetisimmo Cafe Photo 1" class="gallery-img">
+                    </div>
+                    <div class="gallery-item scroll-reveal delay-100">
+                        <img src="assets/user_photo_2.jpg" alt="Apetisimmo Cafe Photo 2" class="gallery-img">
+                    </div>
+                    <div class="gallery-item scroll-reveal delay-200">
+                        <img src="assets/user_photo_3.jpg" alt="Apetisimmo Cafe Photo 3" class="gallery-img">
+                    </div>
+                    <div class="gallery-item scroll-reveal delay-300">
+                        <img src="assets/user_photo_4.jpg" alt="Apetisimmo Cafe Photo 4" class="gallery-img">
+                    </div>
+                    <div class="gallery-item scroll-reveal">
+                        <img src="assets/user_photo_5.jpg" alt="Apetisimmo Cafe Photo 5" class="gallery-img">
+                    </div>
+                    <div class="gallery-item scroll-reveal delay-100">
+                        <img src="assets/user_photo_6.jpg" alt="Apetisimmo Cafe Photo 6" class="gallery-img">
+                    </div>
+                    <div class="gallery-item scroll-reveal delay-200">
+                        <img src="assets/user_photo_7.jpg" alt="Apetisimmo Cafe Photo 7" class="gallery-img">
+                    </div>
+                    <div class="gallery-item scroll-reveal delay-300">
+                        <img src="assets/user_photo_8.jpg" alt="Apetisimmo Cafe Photo 8" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle-badge">
+                        <span class="lang-text-uk">ВІДГУКИ</span>
+                        <span class="lang-text-en">TESTIMONIALS</span>
+                    </span>
+                    <h2 class="section-title">
+                        <span class="lang-text-uk">Що говорять наші гості</span>
+                        <span class="lang-text-en">What Our Guests Say</span>
+                    </h2>
+                </div>
+
+                <div class="reviews-grid">
+                    <div class="review-card scroll-reveal">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="review-text">
+                            <span class="lang-text-uk">"Надзвичайно затишне місце з душею! Хочу щиро подякувати цьому чудовому кафе за неймовірну атмосферу. Тут відчуваєш себе як вдома, адже зустрічають як рідних! Окрема подяка чудовій господині та її родині — доньці та сину. Борщ просто неперевершений, а вареники — пальчики оближеш!"</span>
+                            <span class="lang-text-en">"A very cozy place with a soul! I want to sincerely thank this wonderful cafe for the incredible atmosphere. Here you feel at home, because you are greeted like family! Special thanks to the wonderful hostess, and to her entire family - daughter and son. Borscht is simply unsurpassed, and varenyki are finger-licking!"</span>
+                        </p>
+                        <div class="review-author">
+                            <h4>Andriy K.</h4>
+                            <span>Google Maps Review</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map & Contacts Section -->
+        <section id="contacts" class="contacts-section">
+            <div class="container contacts-grid">
+                <div class="contacts-info scroll-reveal">
+                    <span class="section-subtitle-badge">
+                        <span class="lang-text-uk">КОНТАКТИ</span>
+                        <span class="lang-text-en">CONTACT INFO</span>
+                    </span>
+                    <h2 class="section-title text-white">
+                        <span class="lang-text-uk">Чекаємо на вас</span>
+                        <span class="lang-text-en">Join Us Today</span>
+                    </h2>
+                    
+                    <div class="info-list">
+                        <div class="info-item">
+                            <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
+                            <div class="info-text">
+                                <h5>
+                                    <span class="lang-text-uk">Адреса</span>
+                                    <span class="lang-text-en">Address</span>
+                                </h5>
+                                <p>Rruga Pavarësia, Durrës 2008, Albania</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
+                            <div class="info-text">
+                                <h5>
+                                    <span class="lang-text-uk">Телефон</span>
+                                    <span class="lang-text-en">Phone</span>
+                                </h5>
+                                <p><a href="tel:+355697733122">+355 69 773 3122</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon"><i class="fa-solid fa-clock"></i></span>
+                            <div class="info-text">
+                                <h5>
+                                    <span class="lang-text-uk">Години роботи</span>
+                                    <span class="lang-text-en">Opening Hours</span>
+                                </h5>
+                                <p>
+                                    <span class="lang-text-uk">Щодня 10:00 – 22:00</span>
+                                    <span class="lang-text-en">Everyday 10:00 – 22:00</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon"><i class="fa-solid fa-wallet"></i></span>
+                            <div class="info-text">
+                                <h5>
+                                    <span class="lang-text-uk">Середній чек</span>
+                                    <span class="lang-text-en">Average Bill</span>
+                                </h5>
+                                <p>500 – 1 000 ALL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Google Map Embed for Durres (Rruga Pavarësia area) -->
+                <div class="map-container scroll-reveal delay-100">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.7302672535563!2d19.489709289290074!3d41.31298457813589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!2f49.3!3m3!1m2!1s0x134fd916e788e001%3A0xe54ef0218ab28cbb!2sRruga%20Pavar%C3%ABsia%2C%20Durr%C3%ABs%2C%20Albania!5e0!3m2!1sen!2sua!4v1689360000000!5m2!1sen!2sua" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking/Order Section -->
+        <section id="booking" class="booking-section">
+            <div class="container booking-container">
+                <div class="form-card scroll-reveal">
+                    <div class="form-header">
+                        <h3>
+                            <span class="lang-text-uk">Замовити столик або доставку</span>
+                            <span class="lang-text-en">Book a Table or Order Delivery</span>
+                        </h3>
+                        <p>
+                            <span class="lang-text-uk">Заповніть форму, і наша родина зв'яжеться з вами для підтвердження.</span>
+                            <span class="lang-text-en">Fill out the form, and our family will contact you to confirm.</span>
+                        </p>
+                    </div>
+                    <form id="cafe-booking-form" class="cafe-form" name="apetisimmo-booking" data-netlify="true">
+                        <input type="hidden" name="form-name" value="apetisimmo-booking">
+                        <div class="form-group">
+                            <label for="form-name">
+                                <span class="lang-text-uk">Ваше ім'я</span>
+                                <span class="lang-text-en">Your Name</span>
+                            </label>
+                            <input type="text" id="form-name" name="name" placeholder="Олександр" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-phone">
+                                <span class="lang-text-uk">Телефон</span>
+                                <span class="lang-text-en">Phone Number</span>
+                            </label>
+                            <input type="tel" id="form-phone" name="phone" placeholder="+355 69 773 3122" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-request">
+                                <span class="lang-text-uk">Що ви бажаєте?</span>
+                                <span class="lang-text-en">Type of request</span>
+                            </label>
+                            <select id="form-request" name="request" required>
+                                <option value="" disabled selected class="lang-text-uk">Оберіть варіант...</option>
+                                <option value="Замовлення столика">
+                                    <span class="lang-text-uk">Замовити столик</span>
+                                    <span class="lang-text-en">Book a Table</span>
+                                </option>
+                                <option value="Доставка додому">
+                                    <span class="lang-text-uk">Замовити доставку</span>
+                                    <span class="lang-text-en">Order Delivery</span>
+                                </option>
+                                <option value="Замовлення із собою">
+                                    <span class="lang-text-uk">Заберу із собою (Самовивіз)</span>
+                                    <span class="lang-text-en">Takeaway</span>
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-comments">
+                                <span class="lang-text-uk">Коментарі (кількість осіб / страви)</span>
+                                <span class="lang-text-en">Comments (Guests count / Dishes)</span>
+                            </label>
+                            <textarea id="form-comments" name="comments" rows="3" placeholder="Борщ - 2 порції, Голубці - 1..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full form-submit-btn">
+                            <span class="lang-text-uk">Надіслати заявку</span>
+                            <span class="lang-text-en">Send Request</span>
+                        </button>
+                    </form>
+                    <!-- Form Success Popup -->
+                    <div class="form-success-popup" id="form-success-popup">
+                        <div class="success-icon"><i class="fa-solid fa-heart"></i></div>
+                        <h3>
+                            <span class="lang-text-uk">Заявку прийнято!</span>
+                            <span class="lang-text-en">Request Received!</span>
+                        </h3>
+                        <p>
+                            <span class="lang-text-uk">Дякуємо! Наша родина зв'яжеться з вами найближчим часом.</span>
+                            <span class="lang-text-en">Thank you! Our family will contact you as soon as possible.</span>
+                        </p>
+                        <button type="button" class="btn btn-outline" id="success-close-btn">
+                            <span class="lang-text-uk">Закрити</span>
+                            <span class="lang-text-en">Close</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="logo">APETISIMMO</span>
+                <p class="footer-desc">
+                    <span class="lang-text-uk">Куточок справжньої домашньої української кухні на морському узбережжі Дурреса, Албанія.</span>
+                    <span class="lang-text-en">A corner of authentic homemade Ukrainian cuisine on the seacoast of Durrës, Albania.</span>
+                </p>
+            </div>
+            <div class="footer-links">
+                <h5>
+                    <span class="lang-text-uk">Навігація</span>
+                    <span class="lang-text-en">Menu</span>
+                </h5>
+                <ul>
+                    <li><a href="#hero">
+                        <span class="lang-text-uk">Головна</span>
+                        <span class="lang-text-en">Home</span>
+                    </a></li>
+                    <li><a href="#about">
+                        <span class="lang-text-uk">Про нас</span>
+                        <span class="lang-text-en">About Us</span>
+                    </a></li>
+                    <li><a href="#menu">
+                        <span class="lang-text-uk">Меню</span>
+                        <span class="lang-text-en">Menu</span>
+                    </a></li>
+                    <li><a href="#contacts">
+                        <span class="lang-text-uk">Контакти</span>
+                        <span class="lang-text-en">Contacts</span>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <h5>
+                    <span class="lang-text-uk">Контакти</span>
+                    <span class="lang-text-en">Contacts</span>
+                </h5>
+                <p>+355 69 773 3122</p>
+                <p>Rruga Pavarësia, Durrës, Albania</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Apetisimmo Cafe. All rights reserved.</p>
+                <p class="footer-care">
+                    <span class="lang-text-uk">Приготовлено з любов'ю.</span>
+                    <span class="lang-text-en">Prepared with love and care.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
