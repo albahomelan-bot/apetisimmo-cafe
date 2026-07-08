@@ -564,24 +564,30 @@ img {
 }
 
 .reviews-grid {
-    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .review-card {
     border: 1px solid var(--border-color);
     background-color: var(--bg-light);
-    padding: 4rem;
+    padding: 3.5rem 2.5rem 2.5rem 2.5rem;
     position: relative;
     box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .quote-icon {
-    font-size: 3rem;
-    color: rgba(191, 79, 54, 0.1);
+    font-size: 2.5rem;
+    color: rgba(191, 79, 54, 0.08);
     position: absolute;
-    top: 2rem;
-    left: 2rem;
+    top: 1.25rem;
+    left: 1.5rem;
 }
 
 .review-text {
