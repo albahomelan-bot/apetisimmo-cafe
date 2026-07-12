@@ -51,6 +51,7 @@ body.lang-sq .lang-text-en, body.lang-sq .lang-label-en {
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
@@ -222,6 +223,7 @@ img {
     font-weight: 700;
     letter-spacing: 0.18em;
     color: var(--primary-color);
+    flex-shrink: 0;
 }
 
 .nav-menu ul {
@@ -261,6 +263,7 @@ img {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    flex-shrink: 0;
 }
 
 .lang-switcher {
@@ -276,6 +279,7 @@ img {
     align-items: center;
     gap: 0.5rem;
     transition: var(--transition-smooth);
+    flex-shrink: 0;
 }
 
 .lang-switcher:hover {
@@ -290,6 +294,7 @@ img {
     font-size: 1.35rem;
     color: var(--primary-color);
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 /* Hero Section */
@@ -956,17 +961,29 @@ img {
 }
 
 @media (max-width: 768px) {
+    .header {
+        position: sticky;
+        background-color: var(--bg-light);
+    }
+
     .header .container {
         padding: 0 1rem;
     }
 
     .logo {
-        font-size: 1.15rem;
-        letter-spacing: 0.1em;
+        font-size: 1.05rem;
+        letter-spacing: 0.05em;
+    }
+
+    .lang-switcher {
+        padding: 0.35rem 0.6rem;
+        font-size: 0.7rem;
+        gap: 0.3rem;
     }
 
     .mobile-toggle {
         display: block;
+        font-size: 1.2rem;
     }
 
     .nav-menu {
@@ -1000,7 +1017,7 @@ img {
         display: flex;
         align-items: center;
         margin-left: auto;
-        margin-right: 1.5rem;
+        margin-right: 0.75rem;
     }
 
     .header-right .nav-cta-btn {
