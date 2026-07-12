@@ -25,14 +25,19 @@
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Language Toggling Utility */
-body.lang-uk .lang-text-en, 
-body.lang-uk .lang-label-en {
+/* Language Toggling Utility (UA / EN / SQ) */
+body.lang-uk .lang-text-en, body.lang-uk .lang-label-en,
+body.lang-uk .lang-text-sq, body.lang-uk .lang-label-sq {
     display: none !important;
 }
 
-body.lang-en .lang-text-uk, 
-body.lang-en .lang-label-uk {
+body.lang-en .lang-text-uk, body.lang-en .lang-label-uk,
+body.lang-en .lang-text-sq, body.lang-en .lang-label-sq {
+    display: none !important;
+}
+
+body.lang-sq .lang-text-uk, body.lang-sq .lang-label-uk,
+body.lang-sq .lang-text-en, body.lang-sq .lang-label-en {
     display: none !important;
 }
 

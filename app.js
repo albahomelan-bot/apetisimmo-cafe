@@ -84,19 +84,28 @@ document.addEventListener('DOMContentLoaded', () => {
         revealElements.forEach(el => el.classList.add('revealed'));
     }
 
-    /* 5. Language Switcher Logic (Bilingual UA / EN) */
+    /* 5. Language Switcher Logic (Trilingual UA / EN / SQ) */
     const langSwitcherBtn = document.getElementById('lang-switcher-btn');
     
     if (langSwitcherBtn) {
+        // Load initial language if saved, otherwise default is 'uk'
+        const savedLang = localStorage.getItem('lang') || 'uk';
+        document.body.className = `lang-${savedLang}`;
+        
         langSwitcherBtn.addEventListener('click', () => {
             const body = document.body;
-            if (body.classList.contains('lang-uk')) {
-                body.classList.remove('lang-uk');
-                body.classList.add('lang-en');
-            } else {
-                body.classList.remove('lang-en');
-                body.classList.add('lang-uk');
-            }
+            let currentLang = 'uk';
+            if (body.classList.contains('lang-uk')) currentLang = 'uk';
+            else if (body.classList.contains('lang-en')) currentLang = 'en';
+            else if (body.classList.contains('lang-sq')) currentLang = 'sq';
+            
+            let nextLang = 'uk';
+            if (currentLang === 'uk') nextLang = 'en';
+            else if (currentLang === 'en') nextLang = 'sq';
+            else if (currentLang === 'sq') nextLang = 'uk';
+            
+            body.className = `lang-${nextLang}`;
+            localStorage.setItem('lang', nextLang);
         });
     }
 
