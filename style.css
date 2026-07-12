@@ -956,6 +956,15 @@ img {
 }
 
 @media (max-width: 768px) {
+    .header .container {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        font-size: 1.15rem;
+        letter-spacing: 0.1em;
+    }
+
     .mobile-toggle {
         display: block;
     }
