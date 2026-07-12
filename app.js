@@ -88,9 +88,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const langSwitcherBtn = document.getElementById('lang-switcher-btn');
     
     if (langSwitcherBtn) {
+        const updateMeta = (lang) => {
+            const titles = {
+                uk: "Apetisimmo | Домашня українська кухня в Дурресі, Албанія",
+                en: "Apetisimmo | Authentic Ukrainian Cuisine in Durrës, Albania",
+                sq: "Apetisimmo | Kuzhinë Ukrainase Shtëpiake në Durrës, Shqipëri"
+            };
+            const descriptions = {
+                uk: "Кафе Apetisimmo в Дурресі. Справжня домашня українська кухня: борщ, вареники, голубці, медовик. Затишна сімейна атмосфера на Rruga Pavarësia.",
+                en: "Apetisimmo Cafe in Durrës. Authentic homemade Ukrainian cuisine: borscht, varenyki, holubtsi, honey cake. Cozy family atmosphere on Rruga Pavarësia.",
+                sq: "Apetisimmo Kafe në Durrës. Kuzhinë autentike shtëpiake ukrainase: borsh, varenyki, holubtsi, tortë me mjaltë. Atmosferë komode familjare në Rruga Pavarësia."
+            };
+            
+            document.title = titles[lang] || titles.uk;
+            const metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) {
+                metaDesc.setAttribute('content', descriptions[lang] || descriptions.uk);
+            }
+        };
+
         // Load initial language if saved, otherwise default is 'uk'
         const savedLang = localStorage.getItem('lang') || 'uk';
         document.body.className = `lang-${savedLang}`;
+        updateMeta(savedLang);
         
         langSwitcherBtn.addEventListener('click', () => {
             const body = document.body;
@@ -106,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             body.className = `lang-${nextLang}`;
             localStorage.setItem('lang', nextLang);
+            updateMeta(nextLang);
         });
     }
 
